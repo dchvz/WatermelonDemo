@@ -18,6 +18,7 @@ export function getDatabase(): Database {
     const adapterConfig: SQLiteAdapterOptions = {
       schema,
       migrations,
+      // jsi: true, enable to get a different error when testing
     }
     const adapter = new SQLiteAdapter(adapterConfig)
 
